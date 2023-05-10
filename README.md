@@ -24,8 +24,8 @@ This repo sets up a new computer Mac using a very lightweight bash script. There
    1. Do not share Analytics
 1. Skip Screen Time
 1. Disable Siri
-1. FileVault Disk Encryption 
-   1. Turn on FileVault disk encryption 
+1. FileVault Disk Encryption
+   1. Turn on FileVault disk encryption
    1. Allow my iCloud account to unlock my disk
 1. Skip Touch ID
 1. Skip Apple Pay (Click `Add this card later`)
@@ -49,9 +49,9 @@ This repo sets up a new computer Mac using a very lightweight bash script. There
 1. Run setup script, pass in: machine name, github user, and github name
    ```shell
     cd ~/workstation/machine-setup
-    ./setup.sh <machine_name> <git-user-email> "<git-name>"
+    ./setup.sh <machine_name> <mac_os_user_account_name> <git_user_email> "<git_author_name>"
    ```
-   
+
 ## Final steps
 1. Change caps-lock to Control
    1. System Preferences -> Keyboard -> Modifier Keys -> Change `Caps Lock` => `Control`
