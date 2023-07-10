@@ -32,7 +32,7 @@ This repo sets up a new computer Mac using a very lightweight bash script. There
 1. Select Light mode
 
 ## Automated steps
-1. Access this [machine-setup README](https://github.com/initialcapacity/machine-setup) from your new machine for easier access
+1. Access this [machine-setup README](https://github.com/228Labs/machine-setup/) from your new machine for easier access
 1. [Create new SSH keys for Github access](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 1. Install homebrew
    ```shell
@@ -40,11 +40,11 @@ This repo sets up a new computer Mac using a very lightweight bash script. There
    echo 'eval "$(/usr/local/bin/brew shellenv)"' >> ~/.zprofile
    eval "$(/usr/local/bin/brew shellenv)"
    ```
-1. Git clone [machine-setup repo](https://github.com/initialcapacity/machine-setup)
+1. Git clone [machine-setup repo](https://github.com/228Labs/machine-setup)
    ```shell
    mkdir ~/workstation/
    cd ~/workstation/
-   git clone git@github.com:initialcapacity/machine-setup.git
+   git clone git@github.com:228Labs/machine-setup.git
    ```
 1. Run setup script, pass in: machine name, github user, and github name
    ```shell
