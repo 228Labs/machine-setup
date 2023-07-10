@@ -31,11 +31,6 @@ sudo softwareupdate --install-rosetta --agree-to-license
 # Ignore: "Package Authoring Error: 012-51699: Package reference com.apple.pkg.RosettaUpdateAuto is missing installKBytes attribute"
 xcode-select --install
 
-# install homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
 # brew
 brew analytics off
 
@@ -44,25 +39,7 @@ brew install git
 git config --global user.email $gituseremail
 git config --global user.name "$gitname"
 
-# Java
-brew install openjdk
-brew tap -q AdoptOpenJDK/openjdk
-brew install -q --cask adoptopenjdk11
-echo 'export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home' >> ~/.zprofile
-echo 'export PATH=$JAVA_HOME/bin:$PATH' >> ~/.zprofile
-
-# Ruby
-brew install ruby-install chruby
-echo "source /opt/homebrew/opt/chruby/share/chruby/chruby.sh" >> ~/.zshrc
-echo "source /opt/homebrew/opt/chruby/share/chruby/auto.sh" >> ~/.zshrc
-ruby-install --latest ruby
-
-# Go
-brew install -q go
-brew install -q --cask goland
-
 # browsers
-brew install -q --cask firefox
 brew install -q --cask google-chrome
 
 # Google Cloud
@@ -70,25 +47,16 @@ brew install -q --cask google-cloud-sdk
 echo 'source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"' >> ~/.zprofile
 echo 'source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"' >> ~/.zprofile
 
-# Heroku
-brew tap heroku/brew && brew install heroku
-
 # databases
 brew install -q postgresql@14
 brew services start postgresql
-brew install mysql
 
 # other tools
 brew install wget watch tree
 brew install --cask keepingyouawake jetbrains-toolbox slack zoom pop docker rectangle 1password iterm2
-brew install --cask pastebot krisp
+brew install --cask krisp
 brew install -q --cask sublime-text
-brew install -q --cask intellij-idea
-brew install -q --cask rubymine
-brew install -q flyway
-brew install -q kubernetes-cli
-brew install -q buildpacks/tap/pack
-brew install -q gettext
+brew install -q --cask pycharm
 
 # set menu clock
 defaults write com.apple.menuextra.clock "DateFormat" 'EEE MMM d  h:mm:ss a'
