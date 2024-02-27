@@ -129,8 +129,9 @@ curl -o ~/bin/cloud-sql-proxy https://storage.googleapis.com/cloud-sql-connector
 
 #install pyenv and python 3.11
 brew install pyenv
-brew install python 3.11
-pyenv global 3.11
+pyenv install 3.8.18
+pyenv install 3.11.5
+pyenv global 3.11.5
 
 #install poetry
 curl -sSL https://install.python-poetry.org | python3 -
