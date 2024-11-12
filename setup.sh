@@ -54,7 +54,6 @@ brew services start postgresql
 # other tools
 brew install wget watch tree
 brew install --cask keepingyouawake jetbrains-toolbox slack zoom pop docker rectangle 1password iterm2
-brew install --cask krisp
 brew install -q --cask sublime-text
 brew install -q --cask pycharm
 

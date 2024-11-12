@@ -37,8 +37,8 @@ This repo sets up a new computer Mac using a very lightweight bash script. There
 1. Install homebrew
    ```shell
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-   echo 'eval "$(/usr/local/bin/brew shellenv)"' >> ~/.zprofile
-   eval "$(/usr/local/bin/brew shellenv)"
+   echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+   eval "$(/opt/homebrew/bin/brew shellenv)"
    ```
 1. Git clone [machine-setup repo](https://github.com/228Labs/machine-setup)
    ```shell
